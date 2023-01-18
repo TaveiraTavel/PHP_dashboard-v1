@@ -1,0 +1,76 @@
+ERROR - 2023-01-16 13:24:46 --> mysqli_sql_exception: Unknown column 'limitCredCli' in 'field list' in C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Model.php(699): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\curso_ci4\dashboard-v1\app\Controllers\Clientes.php(26): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(925): App\Controllers\Clientes->store()
+#9 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#10 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\curso_ci4\dashboard-v1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-16 13:24:46 --> Unknown column 'limitCredCli' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tbClientes` (`nomCli`, `dtNascCli`, `celCli`, `endCli`, `limitCredCli`, `created_at`, `updated_at`) VALUES (\'João Mendes Pereira\', \'\', \'11988412162\', \'Av. Francisco Matarazzo, 1821 - Água Branca\', \'1799.9\', \'2023-01-16 13:24:46\', \'2023-01-16 13:24:46\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbClientes` (`nomCli`, `dtNascCli`, `celCli`, `endCli`, `limitCredCli`, `created_at`, `updated_at`) VALUES (\'João Mendes Pereira\', \'\', \'11988412162\', \'Av. Francisco Matarazzo, 1821 - Água Branca\', \'1799.9\', \'2023-01-16 13:24:46\', \'2023-01-16 13:24:46\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbClientes` (`nomCli`, `dtNascCli`, `celCli`, `endCli`, `limitCredCli`, `created_at`, `updated_at`) VALUES (\'João Mendes Pereira\', \'\', \'11988412162\', \'Av. Francisco Matarazzo, 1821 - Água Branca\', \'1799.9\', \'2023-01-16 13:24:46\', \'2023-01-16 13:24:46\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbClientes` (`nomCli`, `dtNascCli`, `celCli`, `endCli`, `limitCredCli`, `created_at`, `updated_at`) VALUES (:nomCli:, :dtNascCli:, :celCli:, :endCli:, :limitCredCli:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(699): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Clientes.php(26): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->store()
+10 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-16 13:39:05 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 1600.
+ 1 SYSTEMPATH\BaseModel.php(1600): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(710): CodeIgniter\BaseModel->transformDataToArray([], 'insert')
+ 3 SYSTEMPATH\Model.php(699): CodeIgniter\BaseModel->insert([], true)
+ 4 APPPATH\Controllers\Clientes.php(26): CodeIgniter\Model->insert([])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->store()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-16 13:56:05 --> Undefined variable $data
+in APPPATH\Views\clientes\index.php on line 55.
+ 1 APPPATH\Views\clientes\index.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\clientes\\index.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\clientes\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('clientes/index', [], true)
+ 5 APPPATH\Controllers\Clientes.php(22): view('clientes/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-16 16:11:56 --> App\Controllers\Clientes::alterar(): Argument #1 ($id) must be of type int, string given, called in C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php on line 925
+in APPPATH\Controllers\Clientes.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->alterar('2a')
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-16 18:07:33 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1600.
+ 1 SYSTEMPATH\BaseModel.php(1600): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(854): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(725): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Clientes.php(57): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->update()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-16 18:10:32 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1600.
+ 1 SYSTEMPATH\BaseModel.php(1600): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(854): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(725): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Clientes.php(57): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->update()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
