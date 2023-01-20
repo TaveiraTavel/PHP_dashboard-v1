@@ -1,3 +1,23 @@
+<div class="modal fade" id="modal-default">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form action="/clientes/excluir" method="post">
+                <input type="hidden" id="idCli" name="idCli" value="">
+                <div class="modal-header">
+                    <h4 class="modal-title">Default Modal</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Você tem certeza que deseja deletar esse Cliente?</p>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    <button type="submit" class="btn btn-danger">Deletar Registro</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 <div class="content-wrapper">
     <div class="content-header">
         <div class="container-fluid">
@@ -52,7 +72,14 @@
                                             <td><?= $tempCli['celCli'] ?></td>
                                             <td><?= $tempCli['endCli'] ?></td>
                                             <td><?= $tempCli['limitCredCli'] ?></td>
-                                            <td><a href="/clientes/alterar/<?= $tempCli['idCli'] ?>">Alterar</a> | <a href="/clientes/deletar">Deletar</a></td>
+                                            <td><a class="btn btn-outline-primary mr-2" href="/clientes/detalhar/<?= $tempCli['idCli'] ?>"><span class="glyphicon glyphicon-zoom-in mr-2">
+                                                    </span>Detalhar</a>
+                                                <a class="btn btn-outline-warning mr-2" href="/clientes/alterar/<?= $tempCli['idCli'] ?>"><span class="glyphicon glyphicon-pencil mr-2">
+                                                    </span>Alterar</a>
+                                                <button type="button" class="btn btn-outline-danger mr-2" onclick="document.getElementById('idCli').value = '<?= $tempCli['idCli'] ?>'" data-toggle="modal" data-target="#modal-default">
+                                                    <span class="glyphicon glyphicon-remove mr-2">
+                                                    </span>Deletar</button>
+                                            </td>
                                         </tr>
 
                                     <?php endforeach; ?>

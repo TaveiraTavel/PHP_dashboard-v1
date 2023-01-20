@@ -1,0 +1,115 @@
+CRITICAL - 2023-01-20 14:04:39 --> Too few arguments to function App\Controllers\Clientes::excluir(), 0 passed in C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php on line 925 and exactly 1 expected
+in APPPATH\Controllers\Clientes.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->excluir()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 14:10:46 --> The route for "index" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('index')
+ 2 SYSTEMPATH\Common.php(861): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Clientes.php(72): redirect('index')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->store()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 14:11:05 --> The route for "clientes/index" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('clientes/index')
+ 2 SYSTEMPATH\Common.php(861): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Clientes.php(72): redirect('clientes/index')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->store()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 14:11:13 --> The route for "Clientes/index" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Clientes/index')
+ 2 SYSTEMPATH\Common.php(861): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Clientes.php(72): redirect('Clientes/index')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->store()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 14:12:01 --> The route for "/Clientes/cadastrar" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/Clientes/cadastrar')
+ 2 SYSTEMPATH\Common.php(861): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Clientes.php(72): redirect('/Clientes/cadastrar')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->store()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 14:12:52 --> The route for "/Clientes/cadastrar" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/Clientes/cadastrar')
+ 2 SYSTEMPATH\Common.php(861): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Clientes.php(72): redirect('/Clientes/cadastrar')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->store()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 14:12:58 --> The route for "/clientes/cadastrar" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/clientes/cadastrar')
+ 2 SYSTEMPATH\Common.php(861): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Clientes.php(72): redirect('/clientes/cadastrar')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->store()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 14:13:55 --> The route for "/clientes/cadastrar" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/clientes/cadastrar')
+ 2 SYSTEMPATH\Common.php(861): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Clientes.php(72): redirect('/clientes/cadastrar')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->store()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 14:15:15 --> The route for "/clientes" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/clientes')
+ 2 APPPATH\Controllers\Clientes.php(72): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->store()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 14:15:29 --> The route for "/clientes/index" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/clientes/index')
+ 2 APPPATH\Controllers\Clientes.php(72): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->store()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 14:15:38 --> The route for "/Clientes/index" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/Clientes/index')
+ 2 APPPATH\Controllers\Clientes.php(72): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->store()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 14:58:31 --> Trying to access array offset on value of type null
+in APPPATH\Views\clientes\alterar.php on line 31.
+ 1 APPPATH\Views\clientes\alterar.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\clientes\\alterar.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\clientes\\alterar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('clientes/alterar', [], true)
+ 5 APPPATH\Controllers\Clientes.php(49): view('clientes/alterar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->alterar('2')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 14:58:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\clientes\alterar.php on line 31.
+ 1 APPPATH\Views\clientes\alterar.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\clientes\\alterar.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\clientes\\alterar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('clientes/alterar', [], true)
+ 5 APPPATH\Controllers\Clientes.php(49): view('clientes/alterar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->alterar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

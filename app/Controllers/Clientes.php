@@ -50,26 +50,52 @@ class Clientes extends BaseController
         echo View('templates/footer');
     }
 
-    // método responsável por inserir/atualizar
+    // método responsável por inserir ou atualizar
     // no banco e redirecionar a navegação
     public function store()
     {
-        $dados = $this->request->getVar();
+        $request = $this->request->getVar();
 
-        if (isset($dados['idCli']))
-        {
+        if (isset($request['idCli'])) { // atualizar
             $this->CliModel
-                ->where('idCli', $dados['idCli'])
-                ->set($dados)
+                ->where('idCli', $request['idCli'])
+                ->set($request)
                 ->update();
-        }
-        else
-        {
+        } else { // inserir
             $this->CliModel
-                ->insert($dados);
+                ->insert($request);
         }
 
-        return redirect()->to('/clientes');
+        return redirect()->to(
+            base_url('/clientes')
+        );
     }
-    
+
+    // método responsável por excluir um registro
+    // do banco de dados e redirecionar a navegação
+    public function excluir()
+    {
+        $idCli = $this->request->getVar('idCli');
+
+        $this->CliModel
+            ->where('idCli', $idCli)
+            ->delete();
+
+        return redirect()->to(
+            base_url('/clientes')
+        );
+    }
+
+    public function detalhar($id)
+    {
+        $tempCli = $this->CliModel
+            ->where('idCli', $id)
+            ->first();
+
+        $data['tempCli'] = $tempCli;
+
+        echo View('templates/header');
+        echo View('clientes/detalhar', $data);
+        echo View('templates/footer');
+    }
 }
