@@ -16,9 +16,7 @@ $alert = $session->get('alert');
             title: 'Registro inserido com sucesso!',
             showConfirmButton: false,
             timer: 2000,
-            timerProgressBar: true,
-            backdrop: 'rgba(0,0,0,0)',
-            allowOutsideClick: false
+            timerProgressBar: true
         })
     </script>
 
