@@ -66,6 +66,9 @@ class Clientes extends BaseController
                 ->insert($request);
         }
 
+        $session = session();
+        $session->setFlashdata('alert', 'success_create');
+
         return redirect()->to(
             base_url('/clientes')
         );

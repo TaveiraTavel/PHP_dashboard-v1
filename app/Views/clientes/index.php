@@ -1,10 +1,36 @@
+<?php
+$session = session();
+$alert = $session->get('alert');
+?>
+
+<?php if (isset($alert) && $alert == 'success_create') : ?>
+
+    <!-- SweetAlert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="<?= base_url('theme/dist/css/sweetalert2.min.css') ?>">
+    <script>
+        Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'success',
+            title: 'Registro inserido com sucesso!',
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true,
+            backdrop: 'rgba(0,0,0,0)',
+            allowOutsideClick: false
+        })
+    </script>
+
+<?php endif; ?>
+
 <div class="modal fade" id="modal-default">
     <div class="modal-dialog">
         <div class="modal-content">
             <form action="/clientes/excluir" method="post">
                 <input type="hidden" id="idCli" name="idCli" value="">
                 <div class="modal-header">
-                    <h4 class="modal-title">Default Modal</h4>
+                    <h4 class="modal-title">Excluir Registro</h4>
                 </div>
                 <div class="modal-body">
                     <p>Você tem certeza que deseja deletar esse Cliente?</p>
