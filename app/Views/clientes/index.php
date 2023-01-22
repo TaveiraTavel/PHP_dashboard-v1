@@ -97,12 +97,12 @@ $alert = $session->get('alert');
                                             <td><?= $tempCli['celCli'] ?></td>
                                             <td><?= $tempCli['endCli'] ?></td>
                                             <td><?= $tempCli['limitCredCli'] ?></td>
-                                            <td><a class="btn btn-outline-primary mr-2" href="/clientes/detalhar/<?= $tempCli['idCli'] ?>"><span class="glyphicon glyphicon-zoom-in mr-2">
+                                            <td><a class="btn btn-outline-primary mr-2" href="/clientes/detalhar/<?= $tempCli['idCli'] ?>"><span class="fas fa-search mr-2">
                                                     </span>Detalhar</a>
-                                                <a class="btn btn-outline-warning mr-2" href="/clientes/alterar/<?= $tempCli['idCli'] ?>"><span class="glyphicon glyphicon-pencil mr-2">
+                                                <a class="btn btn-outline-warning mr-2" href="/clientes/alterar/<?= $tempCli['idCli'] ?>"><span class="fas fa-edit mr-2">
                                                     </span>Alterar</a>
                                                 <button type="button" class="btn btn-outline-danger mr-2" onclick="document.getElementById('idCli').value = '<?= $tempCli['idCli'] ?>'" data-toggle="modal" data-target="#modal-default">
-                                                    <span class="glyphicon glyphicon-remove mr-2">
+                                                    <span class="fas fa-trash mr-2">
                                                     </span>Deletar</button>
                                             </td>
                                         </tr>

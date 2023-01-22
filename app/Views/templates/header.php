@@ -16,7 +16,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="<?= base_url('theme/plugins/fontawesome-free/css/all.min.css') ?>">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= base_url('theme/dist/css/adminlte.min.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('theme/plugins/bootstrap/css/glyphicon.min.css') ?>">
 </head>
 
 <?php include_once('navbar.php') ?>
