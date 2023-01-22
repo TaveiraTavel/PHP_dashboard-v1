@@ -29,13 +29,13 @@ $alert = $session->get('alert');
             <form action="/clientes/excluir" method="post">
                 <input type="hidden" id="idCli" name="idCli" value="">
                 <div class="modal-header">
-                    <h4 class="modal-title">Excluir Registro</h4>
+                    <h4 class="modal-title">Excluir registro</h4>
                 </div>
                 <div class="modal-body">
                     <p>Você tem certeza que deseja deletar esse Cliente?</p>
                 </div>
                 <div class="modal-footer justify-content-between">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
                     <button type="submit" class="btn btn-danger">Deletar Registro</button>
                 </div>
             </form>
@@ -59,10 +59,10 @@ $alert = $session->get('alert');
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <a href="/clientes/cadastrar" class="card-title">Cadastrar Novo</a>
+                            <a href="/clientes/cadastrar" class="card-title"><i class="fas fa-plus-circle mr-2"></i>Cadastrar Novo</a>
                             <div class="card-tools">
                                 <div class="input-group input-group-sm" style="width: 150px;">
-                                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+                                    <input type="text" name="table_search" class="form-control float-right" placeholder="Buscar">
                                     <div class="input-group-append">
                                         <button type="submit" class="btn btn-default">
                                             <i class="fas fa-search"></i>

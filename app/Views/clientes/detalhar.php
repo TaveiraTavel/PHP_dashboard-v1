@@ -63,7 +63,7 @@
                         </div>
 
                         <div class="card-footer">
-                            <a class="btn btn-primary" href="/clientes">Voltar</a>
+                            <a class="btn btn-primary" href="/clientes"><i class="fas fa-caret-left mr-2"></i> Voltar</a>
                         </div>
 
                     </div>

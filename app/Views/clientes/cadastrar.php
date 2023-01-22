@@ -64,7 +64,8 @@
                             </div>
 
                             <div class="card-footer">
-                                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                <a href="/clientes" class="btn btn-secondary"><i class="fas fa-caret-left mr-2"></i>Voltar</a>
+                                <button type="submit" class="btn btn-primary"><i class="fas fa-plus-circle mr-2"></i>Cadastrar</button>
                             </div>
                         </form>
                     </div>
