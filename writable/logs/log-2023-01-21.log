@@ -1,3 +1,78 @@
 CRITICAL - 2023-01-21 18:26:30 --> Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)`
 in APPPATH\Views\clientes\index.php on line 17.
  1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-21 19:30:05 --> require(C:\xampp\htdocs\dashboard-v1\app\Helpers\echomasks.php): Failed to open stream: No such file or directory
+in APPPATH\Views\clientes\index.php on line 91.
+ 1 APPPATH\Views\clientes\index.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\xampp\\htdocs\\dashboard-v1\\app\\Helpers\\echomasks.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\clientes\\index.php', 91)
+ 2 APPPATH\Views\clientes\index.php(91): require()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\clientes\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('clientes/index', [], true)
+ 6 APPPATH\Controllers\Clientes.php(27): view('clientes/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-21 19:30:23 --> require(C:\xampp\htdocs\ci4\app\Helpers\echomasks.php): Failed to open stream: No such file or directory
+in APPPATH\Views\clientes\index.php on line 91.
+ 1 APPPATH\Views\clientes\index.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\xampp\\htdocs\\ci4\\app\\Helpers\\echomasks.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\clientes\\index.php', 91)
+ 2 APPPATH\Views\clientes\index.php(91): require()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\clientes\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('clientes/index', [], true)
+ 6 APPPATH\Controllers\Clientes.php(27): view('clientes/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-21 19:31:07 --> Undefined property: CodeIgniter\View\View::$load
+in APPPATH\Views\clientes\index.php on line 91.
+ 1 APPPATH\Views\clientes\index.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'APPPATH\\Views\\clientes\\index.php', 91)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\clientes\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('clientes/index', [], true)
+ 5 APPPATH\Controllers\Clientes.php(27): view('clientes/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-21 19:32:08 --> Call to undefined function data()
+in APPPATH\Views\clientes\index.php on line 97.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('clientes/index', [], true)
+ 4 APPPATH\Controllers\Clientes.php(27): view('clientes/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-21 19:32:24 --> Undefined variable $echomasks
+in APPPATH\Views\clientes\index.php on line 97.
+ 1 APPPATH\Views\clientes\index.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $echomasks', 'APPPATH\\Views\\clientes\\index.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\clientes\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('clientes/index', [], true)
+ 5 APPPATH\Controllers\Clientes.php(27): view('clientes/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-21 19:33:19 --> Call to undefined function maskdata()
+in APPPATH\Views\clientes\index.php on line 97.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('clientes/index', [], true)
+ 4 APPPATH\Controllers\Clientes.php(27): view('clientes/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-21 19:34:47 --> syntax error, unexpected token "$", expecting "," or ";"
+in APPPATH\Views\clientes\index.php on line 100.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('clientes/index', [], true)
+ 3 APPPATH\Controllers\Clientes.php(27): view('clientes/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

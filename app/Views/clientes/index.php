@@ -88,15 +88,16 @@ $alert = $session->get('alert');
 
                                     <!-- looping para listar todos os clientes da lista passada 
                                          pelo método index da controller Clientes               -->
-                                    <?php foreach ($tempCliList as $tempCli) : ?>
+                                    <?php helper('echomasks_helper');
+                                        foreach ($tempCliList as $tempCli) : ?>
 
                                         <tr>
                                             <td><?= $tempCli['idCli'] ?></td>
                                             <td><?= $tempCli['nomCli'] ?></td>
-                                            <td><?= $tempCli['dtNascCli'] ?></td>
-                                            <td><?= $tempCli['celCli'] ?></td>
+                                            <td><?= maskdata($tempCli['dtNascCli']) ?></td>
+                                            <td><?= maskcel($tempCli['celCli']) ?></td>
                                             <td><?= $tempCli['endCli'] ?></td>
-                                            <td><?= $tempCli['limitCredCli'] ?></td>
+                                            <td>R$ <?= maskmoney($tempCli['limitCredCli']) ?></td>
                                             <td><a class="btn btn-outline-primary mr-2" href="/clientes/detalhar/<?= $tempCli['idCli'] ?>"><span class="fas fa-search mr-2">
                                                     </span>Detalhar</a>
                                                 <a class="btn btn-outline-warning mr-2" href="/clientes/alterar/<?= $tempCli['idCli'] ?>"><span class="fas fa-edit mr-2">
