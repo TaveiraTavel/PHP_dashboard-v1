@@ -3,19 +3,20 @@ $session = session();
 $alert = $session->get('alert');
 ?>
 
-<?php if (isset($alert) && $alert == 'success_create') : ?>
+<?php if (isset($alert)) : ?>
 
     <!-- SweetAlert2 -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="<?= base_url('theme/dist/css/sweetalert2.min.css') ?>">
+
     <script>
         Swal.fire({
             toast: true,
             position: 'top-end',
-            icon: 'success',
-            title: 'Registro inserido com sucesso!',
+            icon: <?= in_array($alert, array('success_create', 'success_update', 'success_delete')) ? '\'success\'' : '' ?>,
+            title: 'Registro <?= ($alert == 'success_create') ? 'criado' : (($alert == 'success_update') ? 'editado' : (($alert == 'success_delete') ? 'apagado' : '')) ?> com sucesso!',
             showConfirmButton: false,
-            timer: 2000,
+            timer: 2500,
             timerProgressBar: true
         })
     </script>

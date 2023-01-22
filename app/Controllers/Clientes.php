@@ -50,24 +50,41 @@ class Clientes extends BaseController
         echo View('templates/footer');
     }
 
+    // URL: /clientes/detalhar/{id}
+    public function detalhar($id)
+    {
+        $tempCli = $this->CliModel
+            ->where('idCli', $id)
+            ->first();
+
+        $data['tempCli'] = $tempCli;
+
+        echo View('templates/header');
+        echo View('clientes/detalhar', $data);
+        echo View('templates/footer');
+    }
+
     // método responsável por inserir ou atualizar
     // no banco e redirecionar a navegação
     public function store()
     {
         $request = $this->request->getVar();
 
+        $session = session();
+
         if (isset($request['idCli'])) { // atualizar
             $this->CliModel
                 ->where('idCli', $request['idCli'])
                 ->set($request)
                 ->update();
+
+            $session->setFlashdata('alert', 'success_update');
         } else { // inserir
             $this->CliModel
                 ->insert($request);
-        }
 
-        $session = session();
-        $session->setFlashdata('alert', 'success_create');
+            $session->setFlashdata('alert', 'success_create');
+        }
 
         return redirect()->to(
             base_url('/clientes')
@@ -84,21 +101,11 @@ class Clientes extends BaseController
             ->where('idCli', $idCli)
             ->delete();
 
+        $session = session();
+        $session->setFlashdata('alert', 'success_delete');
+
         return redirect()->to(
             base_url('/clientes')
         );
-    }
-
-    public function detalhar($id)
-    {
-        $tempCli = $this->CliModel
-            ->where('idCli', $id)
-            ->first();
-
-        $data['tempCli'] = $tempCli;
-
-        echo View('templates/header');
-        echo View('clientes/detalhar', $data);
-        echo View('templates/footer');
     }
 }
