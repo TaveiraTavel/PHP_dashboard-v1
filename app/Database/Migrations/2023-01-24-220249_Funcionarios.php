@@ -6,43 +6,74 @@ use CodeIgniter\Database\Migration;
 
 // Classe responsável pela criação do banco de dados
 // da aplicação via PHPMyAdmin
-class Clientes extends Migration
+class Funcionarios extends Migration
 {
-    // método de criação da tabela tbClientes através do comando:
+    // método de criação da tabela tbFuncionarios através do comando:
     // ~$ php spark migrate
     public function up()
     {
         $this->forge->addField([
-            'idCli' => [
+            'idFunc' => [
                 'type' => 'INT',
                 'constraint' => 9,
                 'unsigned' => true,
                 'auto_increment' => true
             ],
 
-            'nomCli' => [
+            'nomFunc' => [
                 'type' => 'VARCHAR',
                 'constraint' => 128,
                 'required' => true
             ],
 
-            'dtNascCli' => [
+            'dtNascFunc' => [
                 'type' => 'DATE',
                 'required' => true
             ],
 
-            'celCli' => [
+            'RGFunc' => [
                 'type' => 'VARCHAR',
-                'constraint' => 11
+                'constraint' => 14,
+                'required' => true
             ],
 
-            'endCli' => [
+            'CPFFunc' => [
                 'type' => 'VARCHAR',
-                'constraint' => 128
+                'constraint' => 11,
+                'required' => true
             ],
 
-            'limitCredCli' => [
+            'celFunc' => [
+                'type' => 'VARCHAR',
+                'constraint' => 11,
+                'required' => true
+            ],
+
+            'endFunc' => [
+                'type' => 'VARCHAR',
+                'constraint' => 150,
+                'required' => true
+            ],
+
+            'dtContratFunc' => [
+                'type' => 'DATE',
+                'required' => true
+            ],
+            
+            'cargoFunc' => [
+                'type' => 'VARCHAR',
+                'constraint' => 50,
+                'required' => true
+            ],
+
+            'salarioFunc' => [
                 'type' => 'DOUBLE',
+                'required' => true
+            ],
+
+            'diaPagtoFunc' => [
+                'type' => 'DATE',
+                'required' => true
             ],
 
             'created_at' => [
@@ -58,11 +89,8 @@ class Clientes extends Migration
             ]
         ]);
 
-        // métodos nativo da classe Migration do CodeIgniter
-        // que, respectivamente, indica a chave primaria
-        // e executa o comando de criação
-        $this->forge->addKey('idCli', true);
-        $this->forge->createTable('tbClientes');
+        $this->forge->addKey('idFunc', true);
+        $this->forge->createTable('tbFuncionarios');
     }
 
     // método de exclusão da tabela tbClientes através do comando:
@@ -71,6 +99,6 @@ class Clientes extends Migration
     {
         // método nativo da classe Migration do CodeIgniter
         // que de fato executa o comando de exclusão
-        $this->forge->dropTable('tbClientes');
+        $this->forge->dropTable('tbFuncionarios');
     }
 }

@@ -1,0 +1,22 @@
+ERROR - 2023-01-24 16:25:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') NOT NULL,
+	`diaPagtoFunc` DATE NOT NULL,
+	`created_at` DATETIME NOT NULL,
+	...' at line 11 in C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\xampp\htdocs\curso_ci4\dashboard-v1\app\Database\Migrations\2023-01-24-220249_Funcionarios.php(94): CodeIgniter\Database\Forge->createTable('tbFuncionarios')
+#5 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MigrationRunner.php(877): App\Database\Migrations\Funcionarios->up()
+#6 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\curso_ci4\dashboard-v1\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
