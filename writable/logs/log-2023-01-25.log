@@ -1,0 +1,63 @@
+CRITICAL - 2023-01-25 06:53:25 --> Invalid file: funcionarios/footer.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('funcionarios/footer.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('funcionarios/footer', [], true)
+ 3 APPPATH\Controllers\Funcionarios.php(30): view('funcionarios/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Funcionarios->cadastrar()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 07:00:59 --> Invalid file: funcionarios/footer.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('funcionarios/footer.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('funcionarios/footer', [], true)
+ 3 APPPATH\Controllers\Funcionarios.php(30): view('funcionarios/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Funcionarios->cadastrar()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 07:01:19 --> Invalid file: funcionarios/footer.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('funcionarios/footer.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('funcionarios/footer', [], true)
+ 3 APPPATH\Controllers\Funcionarios.php(30): view('funcionarios/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Funcionarios->cadastrar()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 07:01:27 --> Invalid file: funcionarios/footer.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('funcionarios/footer.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('funcionarios/footer', [], true)
+ 3 APPPATH\Controllers\Funcionarios.php(30): view('funcionarios/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Funcionarios->cadastrar()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 07:01:32 --> Invalid file: funcionarios/footer.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('funcionarios/footer.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('funcionarios/footer', [], true)
+ 3 APPPATH\Controllers\Funcionarios.php(30): view('funcionarios/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Funcionarios->cadastrar()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 07:01:41 --> Invalid file: funcionarios/footer.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('funcionarios/footer.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('funcionarios/footer', [], true)
+ 3 APPPATH\Controllers\Funcionarios.php(30): view('funcionarios/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Funcionarios->cadastrar()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 07:02:20 --> Invalid file: funcionarios/footer.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('funcionarios/footer.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('funcionarios/footer', [], true)
+ 3 APPPATH\Controllers\Funcionarios.php(30): view('funcionarios/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Funcionarios->cadastrar()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

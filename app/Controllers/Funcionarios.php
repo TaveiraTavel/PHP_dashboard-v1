@@ -22,4 +22,37 @@ class Funcionarios extends BaseController
         echo View('funcionarios/index', $data);
         echo View('templates/footer');
     }
+
+    public function cadastrar()
+    {
+        echo View('templates/header');
+        echo View('funcionarios/form');
+        echo View('funcionarios/footer');
+    }
+
+    public function alterar($id)
+    {
+        $tempFunc = $this->funcModel
+            ->where('idFunc', $id)
+            ->first();
+        
+        $data['tempFunc'] = $tempFunc;
+
+        echo View('templates/header');
+        echo View('funcionarios/form', $data);
+        echo View('templates/footer');
+    }
+
+    public function detalhar($id)
+    {
+        $tempFunc = $this->funcModel
+            ->where('idFunc')
+            ->first();
+        
+        $data['tempFunc'] = $tempFunc;
+
+        echo View('templates/header');
+        echo View('funcionarios/form', $data);
+        echo View('templates/footer');
+    }
 };
