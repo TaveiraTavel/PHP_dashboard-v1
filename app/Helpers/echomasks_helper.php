@@ -1,6 +1,6 @@
 <?php
 
-function maskcpf(string $cpf)
+function echocpf(string $cpf)
 {
     return substr_replace(
         substr_replace(
@@ -20,7 +20,27 @@ function maskcpf(string $cpf)
     );
 }
 
-function maskdata(string $data)
+function echorg(string $rg)
+{
+    return substr_replace(
+        substr_replace(
+            substr_replace(
+                $rg,
+                '.',
+                2,
+                0
+            ),
+            '.',
+            6,
+            0
+        ),
+        '-',
+        10,
+        0
+    );
+}
+
+function echodate(string $data)
 {
     return date_format(
         (new DateTimeImmutable($data)),
@@ -28,7 +48,7 @@ function maskdata(string $data)
     );
 }
 
-function maskcel(string $celular)
+function echocel(string $celular)
 {
     return substr_replace(
         substr_replace(
@@ -53,7 +73,7 @@ function maskcel(string $celular)
     );
 }
 
-function maskmoney(string $money)
+function echomoney(string $money)
 {
     return number_format((float)$money, 2, ',', '');
 }

@@ -40,7 +40,8 @@ class Funcionarios extends Migration
             'CPFFunc' => [
                 'type' => 'VARCHAR',
                 'constraint' => 11,
-                'required' => true
+                'required' => true,
+                'unique' => true
             ],
 
             'celFunc' => [
@@ -72,7 +73,8 @@ class Funcionarios extends Migration
             ],
 
             'diaPagtoFunc' => [
-                'type' => 'DATE',
+                'type' => 'VARCHAR',
+                'constraint' => 2,
                 'required' => true
             ],
 

@@ -37,6 +37,14 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="/funcionarios" class="nav-link">
+                        <i class="nav-icon fas fa-users"></i>
+                        <p>
+                            Funcionários
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

@@ -20,3 +20,146 @@ Stack trace:
 #14 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
 #15 C:\xampp\htdocs\curso_ci4\dashboard-v1\spark(98): CodeIgniter\CLI\Console->run()
 #16 {main}
+CRITICAL - 2023-01-24 16:45:27 --> Undefined variable $tempCliList
+in APPPATH\Views\funcionarios\index.php on line 92.
+ 1 APPPATH\Views\funcionarios\index.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tempCliList', 'APPPATH\\Views\\funcionarios\\index.php', 92)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\funcionarios\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('funcionarios/index', [], true)
+ 5 APPPATH\Controllers\Funcionarios.php(18): view('funcionarios/index')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Funcionarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-24 17:29:42 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Funcionarios.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Funcionarios->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-24 17:30:18 --> mysqli_sql_exception: Table 'dashboard-v1.tbfuncionario' doesn't exist in C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\curso_ci4\dashboard-v1\app\Controllers\Funcionarios.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(925): App\Controllers\Funcionarios->index()
+#8 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+#9 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\curso_ci4\dashboard-v1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-24 17:30:18 --> Table 'dashboard-v1.tbfuncionario' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbFuncionario`
+WHERE `tbFuncionario`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbFuncionario`
+WHERE `tbFuncionario`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbFuncionario`
+WHERE `tbFuncionario`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbFuncionario`
+WHERE `tbFuncionario`.`deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Funcionarios.php(19): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Funcionarios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-24 17:32:49 --> mysqli_sql_exception: Table 'dashboard-v1.tbfuncionarios' doesn't exist in C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\curso_ci4\dashboard-v1\app\Controllers\Funcionarios.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(925): App\Controllers\Funcionarios->index()
+#8 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+#9 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\curso_ci4\dashboard-v1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-24 17:32:49 --> Table 'dashboard-v1.tbfuncionarios' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbFuncionarios`
+WHERE `tbFuncionarios`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbFuncionarios`
+WHERE `tbFuncionarios`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbFuncionarios`
+WHERE `tbFuncionarios`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbFuncionarios`
+WHERE `tbFuncionarios`.`deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Funcionarios.php(19): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Funcionarios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-24 17:35:04 --> mysqli_sql_exception: Table 'dashboard-v1.tbfuncionarios' doesn't exist in C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\curso_ci4\dashboard-v1\app\Controllers\Funcionarios.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(925): App\Controllers\Funcionarios->index()
+#8 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+#9 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\curso_ci4\dashboard-v1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-24 17:35:04 --> Table 'dashboard-v1.tbfuncionarios' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbFuncionarios`
+WHERE `tbFuncionarios`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbFuncionarios`
+WHERE `tbFuncionarios`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbFuncionarios`
+WHERE `tbFuncionarios`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbFuncionarios`
+WHERE `tbFuncionarios`.`deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Funcionarios.php(19): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Funcionarios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-24 17:43:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ZEROFILL NOT NULL,
+	`created_at` DATETIME NOT NULL,
+	`updated_at` DATETIME NO...' at line 12 in C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\xampp\htdocs\curso_ci4\dashboard-v1\app\Database\Migrations\2023-01-24-220249_Funcionarios.php(94): CodeIgniter\Database\Forge->createTable('tbFuncionarios')
+#5 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MigrationRunner.php(877): App\Database\Migrations\Funcionarios->up()
+#6 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\curso_ci4\dashboard-v1\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
