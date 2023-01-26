@@ -122,3 +122,25 @@ in APPPATH\Views\produtos\detalhar.php on line 32.
  7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
  8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 14:08:10 --> Trying to access array offset on value of type null
+in APPPATH\Views\clientes\detalhar.php on line 33.
+ 1 APPPATH\Views\clientes\detalhar.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\clientes\\detalhar.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\clientes\\detalhar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('clientes/detalhar', [], true)
+ 5 APPPATH\Controllers\Clientes.php(63): view('clientes/detalhar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->detalhar('6')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 14:08:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\clientes\detalhar.php on line 33.
+ 1 APPPATH\Views\clientes\detalhar.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\clientes\\detalhar.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\clientes\\detalhar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('clientes/detalhar', [], true)
+ 5 APPPATH\Controllers\Clientes.php(63): view('clientes/detalhar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Clientes->detalhar('6')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
