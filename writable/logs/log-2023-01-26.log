@@ -1,0 +1,124 @@
+CRITICAL - 2023-01-26 12:21:20 --> Invalid file: produtos/form.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('produtos/form.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('produtos/form', [], true)
+ 3 APPPATH\Controllers\Produtos.php(28): view('produtos/form')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->cadastrar()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 12:32:54 --> Undefined array key "idFunc"
+in APPPATH\Controllers\Produtos.php on line 67.
+ 1 APPPATH\Controllers\Produtos.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idFunc"', 'APPPATH\\Controllers\\Produtos.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->store()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-26 12:34:13 --> mysqli_sql_exception: Unknown column 'idFunc' in 'where clause' in C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\curso_ci4\dashboard-v1\app\Controllers\Produtos.php(49): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(925): App\Controllers\Produtos->detalhar('1')
+#8 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#9 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\curso_ci4\dashboard-v1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-26 12:34:13 --> Unknown column 'idFunc' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbProdutos`
+WHERE `idFunc` = \'1\'
+AND `tbProdutos`.`deleted_at` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbProdutos`
+WHERE `idFunc` = \'1\'
+AND `tbProdutos`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbProdutos`
+WHERE `idFunc` = \'1\'
+AND `tbProdutos`.`deleted_at` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbProdutos`
+WHERE `idFunc` = :idFunc:
+AND `tbProdutos`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Produtos.php(49): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->detalhar('1')
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-26 12:36:54 --> mysqli_sql_exception: Unknown column 'idFunc' in 'where clause' in C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\curso_ci4\dashboard-v1\app\Controllers\Produtos.php(49): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(925): App\Controllers\Produtos->detalhar('1')
+#8 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#9 C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\curso_ci4\dashboard-v1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-26 12:36:54 --> Unknown column 'idFunc' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbProdutos`
+WHERE `idFunc` = \'1\'
+AND `tbProdutos`.`deleted_at` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbProdutos`
+WHERE `idFunc` = \'1\'
+AND `tbProdutos`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbProdutos`
+WHERE `idFunc` = \'1\'
+AND `tbProdutos`.`deleted_at` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbProdutos`
+WHERE `idFunc` = :idFunc:
+AND `tbProdutos`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Produtos.php(49): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->detalhar('1')
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 12:37:36 --> Undefined variable $tempProd
+in APPPATH\Views\produtos\detalhar.php on line 32.
+ 1 APPPATH\Views\produtos\detalhar.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tempProd', 'APPPATH\\Views\\produtos\\detalhar.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\produtos\\detalhar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('produtos/detalhar', [], true)
+ 5 APPPATH\Controllers\Produtos.php(54): view('produtos/detalhar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->detalhar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 12:37:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\produtos\detalhar.php on line 32.
+ 1 APPPATH\Views\produtos\detalhar.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\produtos\\detalhar.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\produtos\\detalhar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('produtos/detalhar', [], true)
+ 5 APPPATH\Controllers\Produtos.php(54): view('produtos/detalhar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->detalhar('16')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -53,8 +53,7 @@ class Produtos extends Migration
             ],
 
             'validadeProd' => [
-                'type' => 'DATE',
-                'required' => true
+                'type' => 'DATE'
             ],
 
             'created_at' => [

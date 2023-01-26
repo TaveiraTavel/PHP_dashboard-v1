@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Models\ProdutoModel;
 
-class Funcionarios extends BaseController
+class Produtos extends BaseController
 {
     private $prodModel;
     function __construct()
@@ -45,10 +45,10 @@ class Funcionarios extends BaseController
     public function detalhar($id)
     {
         $tempProd = $this->prodModel
-            ->where('idFunc', $id)
+            ->where('idProd', $id)
             ->first();
 
-        $data['tempFunc'] = $tempProd;
+        $data['tempProd'] = $tempProd;
 
         echo View('templates/header');
         echo View('produtos/detalhar', $data);
@@ -64,7 +64,7 @@ class Funcionarios extends BaseController
 
         if (isset($request['idProd'])) {
             $this->prodModel
-                ->where('idProd', $request['idFunc'])
+                ->where('idProd', $request['idProd'])
                 ->set($request)
                 ->update();
 
