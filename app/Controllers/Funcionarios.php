@@ -60,15 +60,37 @@ class Funcionarios extends BaseController
         $request = $this->request
             ->getVar();
 
+        $session = session();
+
         if (isset($request['idFunc'])) {
             $this->funcModel
                 ->where('idFunc', $request['idFunc'])
                 ->set($request)
                 ->update();
+            
+            $session->setFlashdata('alert', 'success_update');
         } else {
             $this->funcModel
                 ->insert($request);
+            
+            $session->setFlashdata('alert', 'success_create');
         }
+
+        return redirect()->to(
+            base_url('/funcionarios')
+        );
+    }
+
+    public function excluir()
+    {
+        $idFunc = $this->request->getVar('idFunc');
+
+        $this->funcModel
+            ->where('idFunc', $idFunc)
+            ->delete();
+        
+        $session = session();
+        $session->setFlashdata('alert', 'success_delete');
 
         return redirect()->to(
             base_url('/funcionarios')
