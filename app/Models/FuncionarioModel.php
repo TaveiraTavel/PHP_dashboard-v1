@@ -8,7 +8,7 @@ class FuncionarioModel extends Model
 {
     protected $table = "tbFuncionarios";
     protected $primaryKey = "idFunc";
-    protected $allowFields = [
+    protected $allowedFields = [
         'idFunc',
         'nomFunc',
         'dtNascFunc',

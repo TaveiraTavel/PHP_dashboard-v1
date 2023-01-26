@@ -15,8 +15,7 @@ class Funcionarios extends BaseController
     public function index()
     {
 
-        $data['tempFuncList'] = $this->funcModel
-                                            ->findAll();
+        $data['tempFuncList'] = $this->funcModel->findAll();
 
         echo View('templates/header');
         echo View('funcionarios/index', $data);
@@ -35,7 +34,7 @@ class Funcionarios extends BaseController
         $tempFunc = $this->funcModel
             ->where('idFunc', $id)
             ->first();
-        
+
         $data['tempFunc'] = $tempFunc;
 
         echo View('templates/header');
@@ -46,13 +45,33 @@ class Funcionarios extends BaseController
     public function detalhar($id)
     {
         $tempFunc = $this->funcModel
-            ->where('idFunc')
+            ->where('idFunc', $id)
             ->first();
-        
+
         $data['tempFunc'] = $tempFunc;
 
         echo View('templates/header');
-        echo View('funcionarios/form', $data);
+        echo View('funcionarios/detalhar', $data);
         echo View('templates/footer');
+    }
+
+    public function store()
+    {
+        $request = $this->request
+            ->getVar();
+
+        if (isset($request['idFunc'])) {
+            $this->funcModel
+                ->where('idFunc', $request['idFunc'])
+                ->set($request)
+                ->update();
+        } else {
+            $this->funcModel
+                ->insert($request);
+        }
+
+        return redirect()->to(
+            base_url('/funcionarios')
+        );
     }
 };
