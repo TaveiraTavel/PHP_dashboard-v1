@@ -2,56 +2,56 @@
 
 namespace App\Controllers;
 
-use App\Models\FuncionarioModel;
+use App\Models\ProdutoModel;
 
 class Funcionarios extends BaseController
 {
-    private $funcModel;
+    private $prodModel;
     function __construct()
     {
-        $this->funcModel = new FuncionarioModel();
+        $this->prodModel = new ProdutoModel();
     }
 
     public function index()
     {
 
-        $data['tempFuncList'] = $this->funcModel->findAll();
+        $data['tempProdList'] = $this->prodModel->findAll();
 
         echo View('templates/header');
-        echo View('funcionarios/index', $data);
+        echo View('produtos/index', $data);
         echo View('templates/footer');
     }
 
     public function cadastrar()
     {
         echo View('templates/header');
-        echo View('funcionarios/form');
+        echo View('produtos/form');
         echo View('templates/footer');
     }
 
     public function alterar($id)
     {
-        $tempFunc = $this->funcModel
-            ->where('idFunc', $id)
+        $tempProd = $this->prodModel
+            ->where('idProd', $id)
             ->first();
 
-        $data['tempFunc'] = $tempFunc;
+        $data['tempProd'] = $tempProd;
 
         echo View('templates/header');
-        echo View('funcionarios/form', $data);
+        echo View('produtos/form', $data);
         echo View('templates/footer');
     }
 
     public function detalhar($id)
     {
-        $tempFunc = $this->funcModel
+        $tempProd = $this->prodModel
             ->where('idFunc', $id)
             ->first();
 
-        $data['tempFunc'] = $tempFunc;
+        $data['tempFunc'] = $tempProd;
 
         echo View('templates/header');
-        echo View('funcionarios/detalhar', $data);
+        echo View('produtos/detalhar', $data);
         echo View('templates/footer');
     }
 
@@ -62,38 +62,38 @@ class Funcionarios extends BaseController
 
         $session = session();
 
-        if (isset($request['idFunc'])) {
-            $this->funcModel
-                ->where('idFunc', $request['idFunc'])
+        if (isset($request['idProd'])) {
+            $this->prodModel
+                ->where('idProd', $request['idFunc'])
                 ->set($request)
                 ->update();
-            
+
             $session->setFlashdata('alert', 'success_update');
         } else {
-            $this->funcModel
+            $this->prodModel
                 ->insert($request);
-            
+
             $session->setFlashdata('alert', 'success_create');
         }
 
         return redirect()->to(
-            base_url('/funcionarios')
+            base_url('/produtos')
         );
     }
 
     public function excluir()
     {
-        $idFunc = $this->request->getVar('idFunc');
+        $idProd = $this->request->getVar('idProd');
 
-        $this->funcModel
-            ->where('idFunc', $idFunc)
+        $this->prodModel
+            ->where('idProd', $idProd)
             ->delete();
-        
+
         $session = session();
         $session->setFlashdata('alert', 'success_delete');
 
         return redirect()->to(
-            base_url('/funcionarios')
+            base_url('/produtos')
         );
     }
 };
