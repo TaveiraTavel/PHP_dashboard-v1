@@ -18,8 +18,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-                        <i class="fas fa-th-large"></i>
+                    <a class="nav-link" href="/login/logout">
+                        Logout<i class="fas fa-sign-out-alt ml-2"></i>
                     </a>
                 </li>
             </ul>
