@@ -29,7 +29,7 @@ class Usuario extends Migration
             ],
 
             'senhaUsu' => [
-                'type' => 'BINARY',
+                'type' => 'VARCHAR',
                 'constraint' => 60,
                 'required' => true
             ],

@@ -14,9 +14,36 @@
     <link rel="stylesheet" href="<?= base_url('theme/plugins/icheck-bootstrap/icheck-bootstrap.min.css') ?>">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= base_url('theme/dist/css/adminlte.min.css') ?>">
+
 </head>
 
 <body class="hold-transition login-page">
+
+    <?php
+        $session = session();
+        $alert = $session->get('alert');
+    ?>
+
+    <?php if (isset($alert)) : ?>
+
+        <!-- SweetAlert2 -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link rel="stylesheet" href="<?= base_url('theme/dist/css/sweetalert2.min.css') ?>">
+
+        <script>
+            Swal.fire({
+                toast: true,
+                position: 'top-end',
+                icon: 'error',
+                title: 'Usuário e senha não coincidem!',
+                showConfirmButton: false,
+                timer: 3500,
+                timerProgressBar: true
+            })
+        </script>
+
+    <?php endif; ?>
+
     <div class="login-box">
         <div class="login-logo">
             <a><b>Dashboard</b> CodeIgniter 4</a>
@@ -28,7 +55,7 @@
 
                 <form action="/login/autenticar" method="post">
                     <div class="input-group mb-3">
-                        <input name="apelidUsu" id="apelidUsu" type="email" class="form-control" placeholder="Usuário">
+                        <input name="apelidUsu" id="apelidUsu" type="text" class="form-control" placeholder="Usuário">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>

@@ -1,3 +1,24 @@
+<?php
+    $session = session();
+    $nomUsu = $session->get('nomUsu');
+?>
+
+<!-- SweetAlert2 -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="stylesheet" href="<?= base_url('theme/dist/css/sweetalert2.min.css') ?>">
+
+<script>
+    Swal.fire({
+        toast: true,
+        position: 'top-end',
+        icon: 'success',
+        title: 'Bem-vindo(a) <?= $nomUsu ?>!',
+        showConfirmButton: false,
+        timer: 2500,
+        timerProgressBar: true
+    })
+</script>
+
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->

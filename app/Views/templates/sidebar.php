@@ -14,7 +14,7 @@
                 <img src="https://media.licdn.com/dms/image/D4D03AQEky-1HG4ICjg/profile-displayphoto-shrink_200_200/0/1670967409515?e=1679529600&v=beta&t=bxDO7mniF7yhIZAixkpqdanGiaCeEmP6s9SYzB8oBlk" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">Mateus Taveira</a>
+                <a href="#" class="d-block"><?= $nomUsu ?></a>
             </div>
         </div>
 

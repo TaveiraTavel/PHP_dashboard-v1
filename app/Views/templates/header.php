@@ -18,5 +18,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="<?= base_url('theme/dist/css/adminlte.min.css') ?>">
 </head>
 
+<?php
+    $session = session();
+    $nomUsu = $session->get('nomUsu');
+?>
+
 <?php include_once('navbar.php') ?>
 <?php include_once('sidebar.php') ?>
