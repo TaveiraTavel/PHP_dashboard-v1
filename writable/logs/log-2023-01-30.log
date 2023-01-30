@@ -1,0 +1,9 @@
+CRITICAL - 2023-01-30 17:00:35 --> Invalid file: usario/login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usario/login.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('usario/login', [], true)
+ 3 APPPATH\Controllers\Usuario.php(18): view('usario/login')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Usuario->login()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

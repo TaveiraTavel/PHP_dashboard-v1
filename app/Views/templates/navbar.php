@@ -18,7 +18,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/login/logout">
+                    <a class="nav-link" href="/usuario/logout">
                         Logout<i class="fas fa-sign-out-alt ml-2"></i>
                     </a>
                 </li>

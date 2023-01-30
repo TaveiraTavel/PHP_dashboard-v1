@@ -53,7 +53,7 @@
             <div class="card-body login-card-body">
                 <p class="login-box-msg">Acesse sua conta para continuar</p>
 
-                <form action="/login/autenticar" method="post">
+                <form action="/usuario/autenticar" method="post">
                     <div class="input-group mb-3">
                         <input name="apelidUsu" id="apelidUsu" type="text" class="form-control" placeholder="Usuário">
                         <div class="input-group-append">
