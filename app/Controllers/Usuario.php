@@ -49,13 +49,12 @@ class Usuario extends BaseController
         $request = $this->request->getVar();
 
         $tempUsu = $this->usuModel
-            ->where('apelidUsu like binary', $request['apelidUsu']) 
-            ->where('senhaUsu like binary', $request['senhaUsu']) // "like binary" para case sensitive
+            ->where('apelidUsu like binary', $request['apelidUsu']) // "like binary" para case sensitive
             ->first();
 
         $session = session();
 
-        if (!empty($tempUsu)) {
+        if (!empty($tempUsu) && password_verify($request['senhaUsu'], $tempUsu['senhaUsu'])) {
             $session->set('idUsu', $tempUsu['idUsu']); // setando idUsu na sessão
             $session->set('nomUsu', $tempUsu['nomUsu']); // setando nomUsu na sessão
             $session->setFlashdata('alert', 'success_login');
@@ -63,13 +62,12 @@ class Usuario extends BaseController
             return redirect()->to(
                 base_url('/')
             );
-        } else {
-            $session->setFlashdata('alert', 'error_login');
-
-            return redirect()->to(
-                base_url('/usuario/login')
-            );
         }
+        $session->setFlashdata('alert', 'error_login');
+
+        return redirect()->to(
+            base_url('/usuario/login')
+        );
     }
 
     public function logout()
@@ -90,8 +88,8 @@ class Usuario extends BaseController
         $tempUsu = $this->usuModel
             ->where('idUsu', $idUsu)
             ->first();
-        
-        if ($request['senhaAtual'] == $tempUsu['senhaUsu']){
+
+        if (password_verify($request['senhaAtual'], $tempUsu['senhaUsu'])){
 
             if ($request['senhaNova'] == $request['senhaNovaConf']){
 
@@ -99,7 +97,7 @@ class Usuario extends BaseController
                     ->where('idUsu', $idUsu)
                     ->set('nomUsu', $request['nomUsu'])
                     ->set('apelidUsu', $request['apelidUsu'])
-                    ->set('senhaUsu', $request['senhaNova'])
+                    ->set('senhaUsu', password_hash($request['senhaNova'], PASSWORD_BCRYPT))
                     ->update();
 
                 $session->set('nomUsu', $request['nomUsu']);
