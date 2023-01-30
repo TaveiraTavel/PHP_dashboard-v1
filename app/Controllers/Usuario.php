@@ -15,14 +15,33 @@ class Usuario extends BaseController
 
     public function index()
     {
+        $tempUsu = $this->usuModel
+            ->where('idUsu', session()->get('idUsu'))
+            ->first();
+
+        $data['tempUsu'] = $tempUsu;
+
         echo View('templates/header');
-        echo View('usuario/index');
+        echo View('usuario/index', $data);
         echo View('templates/footer');
     }
 
     public function login()
     {
         echo View('usuario/login');
+    }
+
+    public function alterar()
+    {
+        $tempUsu = $this->usuModel
+            ->where('idUsu', session()->get('idUsu'))
+            ->first();
+        
+        $data['tempUsu'] = $tempUsu;
+
+        echo View('templates/header');
+        echo View('usuario/alterar', $data);
+        echo View('templates/footer');
     }
 
     public function autenticar()
@@ -37,7 +56,8 @@ class Usuario extends BaseController
         $session = session();
 
         if (!empty($tempUsu)) {
-            $session->set('nomUsu', $tempUsu['nomUsu']);
+            $session->set('idUsu', $tempUsu['idUsu']); // setando idUsu na sessão
+            $session->set('nomUsu', $tempUsu['nomUsu']); // setando nomUsu na sessão
             $session->setFlashdata('alert', 'success_login');
 
             return redirect()->to(
@@ -58,6 +78,46 @@ class Usuario extends BaseController
 
         return redirect()->to(
             base_url('/usuario/login')
+        );
+    }
+
+    public function store()
+    {
+        $session = session();
+        $request = $this->request->getVar();
+        $idUsu = session()->get('idUsu');
+
+        $tempUsu = $this->usuModel
+            ->where('idUsu', $idUsu)
+            ->first();
+        
+        if ($request['senhaAtual'] == $tempUsu['senhaUsu']){
+
+            if ($request['senhaNova'] == $request['senhaNovaConf']){
+
+                $this->usuModel
+                    ->where('idUsu', $idUsu)
+                    ->set('nomUsu', $request['nomUsu'])
+                    ->set('apelidUsu', $request['apelidUsu'])
+                    ->set('senhaUsu', $request['senhaNova'])
+                    ->update();
+
+                $session->set('nomUsu', $request['nomUsu']);
+                $session->setFlashdata('alert', 'success_update');
+
+                return redirect()->to(
+                    base_url('/usuario')
+                );
+
+            } else {
+                $session->setFlashdata('alert', 'error_confirmsenha');
+            }
+        } else {
+            $session->setFlashdata('alert', 'error_senhaatual');
+        }
+
+        return redirect()->to(
+            base_url('/usuario/alterar')
         );
     }
 }
