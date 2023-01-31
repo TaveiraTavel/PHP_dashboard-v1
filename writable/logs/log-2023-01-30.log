@@ -53,3 +53,36 @@ in APPPATH\Controllers\Usuario.php on line 58.
  3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
  4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 21:18:46 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuario\index.php on line 51.
+ 1 APPPATH\Views\usuario\index.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuario\\index.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuario\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('usuario/index', [], true)
+ 5 APPPATH\Controllers\Usuario.php(25): view('usuario/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Usuario->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 21:19:45 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuario\index.php on line 51.
+ 1 APPPATH\Views\usuario\index.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuario\\index.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuario\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('usuario/index', [], true)
+ 5 APPPATH\Controllers\Usuario.php(25): view('usuario/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Usuario->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 21:19:55 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuario\index.php on line 51.
+ 1 APPPATH\Views\usuario\index.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuario\\index.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuario\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('usuario/index', [], true)
+ 5 APPPATH\Controllers\Usuario.php(25): view('usuario/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Usuario->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

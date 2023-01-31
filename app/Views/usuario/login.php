@@ -20,8 +20,8 @@
 <body class="hold-transition login-page">
 
     <?php
-        $session = session();
-        $alert = $session->get('alert');
+    $session = session();
+    $alert = $session->get('alert');
     ?>
 
     <?php if (isset($alert)) : ?>
@@ -46,6 +46,7 @@
 
     <div class="login-box">
         <div class="login-logo">
+            <i class="fas fa-fire ml-4 mr-3 mb-4 d-block" style="color: #cc5c1c; font-size: 92px;"></i>
             <a><b>Dashboard</b> CodeIgniter 4</a>
         </div>
         <!-- /.login-logo -->
@@ -83,12 +84,14 @@
     </div>
     <!-- /.login-box -->
 
-    <!-- jQuery -->
-    <script src="<?= base_url('theme/plugins/jquery/jquery.min.js') ?>"></script>
-    <!-- Bootstrap 4 -->
-    <script src="<?= base_url('theme/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
-    <!-- AdminLTE App -->
-    <script src="<?= base_url('theme/dist/js/adminlte.min.js') ?>"></script>
+    <a href="https://github.com/TaveiraTavel" class="mt-2">By: <i class="fab fa-github"></i> Mateus Taveira</p>
+
+        <!-- jQuery -->
+        <script src="<?= base_url('theme/plugins/jquery/jquery.min.js') ?>"></script>
+        <!-- Bootstrap 4 -->
+        <script src="<?= base_url('theme/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+        <!-- AdminLTE App -->
+        <script src="<?= base_url('theme/dist/js/adminlte.min.js') ?>"></script>
 </body>
 
 </html>

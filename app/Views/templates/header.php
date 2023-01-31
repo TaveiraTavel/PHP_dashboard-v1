@@ -1,3 +1,13 @@
+<?php
+    $session = session();
+    $nomUsu = $session->get('nomUsu');
+
+    if (empty($nomUsu)){
+        header("Location: ".base_url('/usuario/login'));
+        return exit();
+    };
+?>
+
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -17,11 +27,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= base_url('theme/dist/css/adminlte.min.css') ?>">
 </head>
-
-<?php
-    $session = session();
-    $nomUsu = $session->get('nomUsu');
-?>
 
 <?php include_once('navbar.php') ?>
 <?php include_once('sidebar.php') ?>
