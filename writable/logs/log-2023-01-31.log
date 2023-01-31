@@ -1,0 +1,203 @@
+CRITICAL - 2023-01-31 13:54:07 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\curso_ci4\dashboard-v1\app\Controllers\Produtos.php on line 28
+in SYSTEMPATH\Common.php on line 1121.
+ 1 APPPATH\Controllers\Produtos.php(28): view('produtos/form', null)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 13:54:23 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\curso_ci4\dashboard-v1\app\Controllers\Produtos.php on line 28
+in SYSTEMPATH\Common.php on line 1121.
+ 1 APPPATH\Controllers\Produtos.php(28): view('produtos/form', null)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 13:54:25 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\curso_ci4\dashboard-v1\app\Controllers\Produtos.php on line 28
+in SYSTEMPATH\Common.php on line 1121.
+ 1 APPPATH\Controllers\Produtos.php(28): view('produtos/form', null)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 13:54:31 --> Too few arguments to function App\Controllers\Produtos::cadastrar(), 0 passed in C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php on line 925 and exactly 1 expected
+in APPPATH\Controllers\Produtos.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->cadastrar()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 13:54:34 --> Too few arguments to function App\Controllers\Produtos::cadastrar(), 0 passed in C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php on line 925 and exactly 1 expected
+in APPPATH\Controllers\Produtos.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->cadastrar()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 13:55:38 --> Too few arguments to function App\Controllers\Produtos::cadastrar(), 0 passed in C:\xampp\htdocs\curso_ci4\dashboard-v1\system\CodeIgniter.php on line 925 and exactly 1 expected
+in APPPATH\Controllers\Produtos.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->cadastrar()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 13:55:54 --> Undefined variable $formErrors
+in APPPATH\Views\produtos\form.php on line 27.
+ 1 APPPATH\Views\produtos\form.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $formErrors', 'APPPATH\\Views\\produtos\\form.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\produtos\\form.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('produtos/form', [], true)
+ 5 APPPATH\Controllers\Produtos.php(28): view('produtos/form', [])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->cadastrar()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 13:56:11 --> Undefined variable $formErrors
+in APPPATH\Views\produtos\form.php on line 30.
+ 1 APPPATH\Views\produtos\form.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $formErrors', 'APPPATH\\Views\\produtos\\form.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\produtos\\form.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('produtos/form', [], true)
+ 5 APPPATH\Controllers\Produtos.php(28): view('produtos/form', [])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->cadastrar()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 13:56:18 --> Undefined variable $formErrors
+in APPPATH\Views\produtos\form.php on line 30.
+ 1 APPPATH\Views\produtos\form.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $formErrors', 'APPPATH\\Views\\produtos\\form.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\produtos\\form.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('produtos/form', [], true)
+ 5 APPPATH\Controllers\Produtos.php(28): view('produtos/form', [])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->cadastrar()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 13:56:20 --> Undefined variable $formErrors
+in APPPATH\Views\produtos\form.php on line 30.
+ 1 APPPATH\Views\produtos\form.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $formErrors', 'APPPATH\\Views\\produtos\\form.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\produtos\\form.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('produtos/form', [], true)
+ 5 APPPATH\Controllers\Produtos.php(28): view('produtos/form', [])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->cadastrar()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 13:56:20 --> Undefined variable $formErrors
+in APPPATH\Views\produtos\form.php on line 30.
+ 1 APPPATH\Views\produtos\form.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $formErrors', 'APPPATH\\Views\\produtos\\form.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\produtos\\form.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('produtos/form', [], true)
+ 5 APPPATH\Controllers\Produtos.php(28): view('produtos/form', [])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->cadastrar()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 13:56:20 --> Undefined variable $formErrors
+in APPPATH\Views\produtos\form.php on line 30.
+ 1 APPPATH\Views\produtos\form.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $formErrors', 'APPPATH\\Views\\produtos\\form.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\produtos\\form.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('produtos/form', [], true)
+ 5 APPPATH\Controllers\Produtos.php(28): view('produtos/form', [])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->cadastrar()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 13:56:20 --> Undefined variable $formErrors
+in APPPATH\Views\produtos\form.php on line 30.
+ 1 APPPATH\Views\produtos\form.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $formErrors', 'APPPATH\\Views\\produtos\\form.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\produtos\\form.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('produtos/form', [], true)
+ 5 APPPATH\Controllers\Produtos.php(28): view('produtos/form', [])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->cadastrar()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 13:56:20 --> Undefined variable $formErrors
+in APPPATH\Views\produtos\form.php on line 30.
+ 1 APPPATH\Views\produtos\form.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $formErrors', 'APPPATH\\Views\\produtos\\form.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\produtos\\form.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('produtos/form', [], true)
+ 5 APPPATH\Controllers\Produtos.php(28): view('produtos/form', [])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->cadastrar()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 13:56:27 --> Undefined variable $formErrors
+in APPPATH\Views\produtos\form.php on line 30.
+ 1 APPPATH\Views\produtos\form.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $formErrors', 'APPPATH\\Views\\produtos\\form.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\produtos\\form.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('produtos/form', [], true)
+ 5 APPPATH\Controllers\Produtos.php(28): view('produtos/form', [])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->cadastrar()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 13:56:57 --> double is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('double')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('valCompProd', 'valCompProd', 'aaaaaaa', [...], [...])
+ 3 SYSTEMPATH\BaseModel.php(1373): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(713): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(699): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\Produtos.php(73): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->store()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 14:30:04 --> Undefined variable $data
+in APPPATH\Controllers\Produtos.php on line 32.
+ 1 APPPATH\Controllers\Produtos.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Produtos.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 14:34:59 --> alpha_numeric_spaces is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('alpha_numeric_spaces')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('nomProd', 'nomProd', 'CADEIRA GAMER RAZER ENKI X, PRETA E VERDE, RZ38-03880100-R3U1', [...], [...])
+ 3 SYSTEMPATH\BaseModel.php(1373): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(713): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(699): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\Produtos.php(75): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->store()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 14:36:18 --> alpha_numeric_spaces is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('alpha_numeric_spaces')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('nomProd', 'nomProd', 'CADEIRA GAMER RAZER ENKI X, PRETA E VERDE, RZ38-03880100-R3U1', [...], [...])
+ 3 SYSTEMPATH\BaseModel.php(1373): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(713): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(699): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\Produtos.php(75): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->store()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 14:38:44 --> Undefined array key "precoProd"
+in APPPATH\Views\produtos\index.php on line 99.
+ 1 APPPATH\Views\produtos\index.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precoProd"', 'APPPATH\\Views\\produtos\\index.php', 99)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\produtos\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('produtos/index', [], true)
+ 5 APPPATH\Controllers\Produtos.php(21): view('produtos/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 14:38:51 --> Undefined array key "valProd"
+in APPPATH\Views\produtos\index.php on line 99.
+ 1 APPPATH\Views\produtos\index.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valProd"', 'APPPATH\\Views\\produtos\\index.php', 99)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\produtos\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('produtos/index', [], true)
+ 5 APPPATH\Controllers\Produtos.php(21): view('produtos/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Produtos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

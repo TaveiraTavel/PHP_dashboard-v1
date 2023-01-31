@@ -24,8 +24,10 @@ class Produtos extends BaseController
 
     public function cadastrar()
     {
+        $data['formErrors'] = session('formErrors');
+
         echo View('templates/header');
-        echo View('produtos/form');
+        echo View('produtos/form', $data);
         echo View('templates/footer');
     }
 
@@ -70,10 +72,13 @@ class Produtos extends BaseController
 
             $session->setFlashdata('alert', 'success_update');
         } else {
-            $this->prodModel
-                ->insert($request);
-
-            $session->setFlashdata('alert', 'success_create');
+            if ($this->prodModel->insert($request)){
+                $session->setFlashdata('alert', 'success_create');
+            } else {
+                return redirect()->back()
+                    ->withInput()
+                    ->with('formErrors', $this->prodModel->errors());
+            }            
         }
 
         return redirect()->to(

@@ -24,4 +24,15 @@ class ProdutoModel extends Model
     protected $createdField = "created_at";
     protected $updatedField = "updated_at";
     protected $deletedField = "deleted_at";
+    
+    protected $validationRules = [
+        'nomProd'       => 'required|max_length[128]|is_unique[tbProdutos.nomprod]',
+        'descProd'      => 'required',
+        'qtdProd'       => 'required|integer',
+        'qtdMinProd'    => 'required|integer',
+        'valCompProd'   => 'required|decimal',
+        'valVendProd'   => 'required|decimal',
+        'lucroProd'     => 'required|decimal',
+        'validadeProd'  => 'date'
+    ];
 }
