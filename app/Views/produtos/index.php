@@ -96,7 +96,7 @@ $alert = $session->get('alert');
                                                 <td><?= $tempProd['nomProd'] ?></td>
                                                 <td><?= $tempProd['qtdProd'] ?></td>
                                                 <td><?= $tempProd['qtdMinProd'] ?></td>
-                                                <td><?= echomoney($tempProd['valVendProd']) ?></td>
+                                                <td><?= 'R$ '.echomoney($tempProd['valVendProd']) ?></td>
                                                 <td><a class="btn btn-outline-primary mr-2" href="/produtos/detalhar/<?= $tempProd['idProd'] ?>"><span class="fas fa-search mr-2">
                                                         </span>Detalhar</a>
                                                     <a class="btn btn-outline-warning mr-2" href="/produtos/alterar/<?= $tempProd['idProd'] ?>"><span class="fas fa-edit mr-2">
